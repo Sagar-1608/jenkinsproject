@@ -8,10 +8,10 @@
 "test": "mocha test.js"
 },
 "dependencies": {
-"express": "⁴.17.1"
+"express": "4.17.1"
 },
 "devDependencies": {
-"mocha": "⁹.1.0",
-"supertest": "⁶.1.6"
+"mocha": "9.1.0",
+"supertest": "6.1.6"
 }
 }
