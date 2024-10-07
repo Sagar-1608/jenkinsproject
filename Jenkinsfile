@@ -7,7 +7,7 @@ PATH = "${NODE_HOME}/bin:${env.PATH}"
 stages {
 stage('Clone Repository') {
 steps {
-git branch: 'main', url: 'https://github.com/your-username/your-nodejs-repo.git'
+git branch: 'main', url: 'https://github.com/Sagar-1608/jenkinsproject.git'
 }
 }
 stage('Install Dependencies') {
@@ -29,7 +29,7 @@ stage('Deploy to EC2') {
 steps {
 sshagent(['ec2-ssh-pem']) {
 sh '''
-ssh -o StrictHostKeyChecking=no ubuntu@<ec2-ip-address> << EOF
+ssh -o StrictHostKeyChecking=no ubuntu@3.84.172.150 << EOF
 cd /path/to/your/app
 git pull origin main
 npm install - production
