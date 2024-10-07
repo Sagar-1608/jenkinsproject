@@ -7,6 +7,11 @@
 "start": "node index.js",
 "test": "mocha test.js"
 },
+  "scripts": {
+  "start": "node server.js",
+  "test": "jest",
+  "build": "webpack --config webpack.config.js"  // Example build script
+},
 "dependencies": {
 "express": "4.17.1"
 },
