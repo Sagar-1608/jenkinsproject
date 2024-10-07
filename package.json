@@ -5,8 +5,7 @@
 "main": "index.js",
 "scripts": {
 "start": "node index.js",
-"test": "mocha test.js",
-"build": "webpack --config webpack.config.js"  // Example build script
+"test": "mocha test.js"
 },
   
 "dependencies": {
